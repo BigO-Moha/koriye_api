@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_padges",
+  "info": {
+    "singularName": "home-padge",
+    "pluralName": "home-padges",
+    "displayName": "home_padge"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

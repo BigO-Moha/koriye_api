@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses_catogories",
+  "info": {
+    "singularName": "courses-catogory",
+    "pluralName": "courses-catogories",
+    "displayName": "courses_catogory"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "banner_image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course",
+      "mappedBy": "courses_catogory"
+    }
+  }
+}
