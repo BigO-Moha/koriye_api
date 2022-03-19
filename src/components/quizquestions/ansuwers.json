@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_quizquestions_ansuwers",
+  "info": {
+    "displayName": "ansuwers",
+    "icon": "transgender-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "asnwer": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

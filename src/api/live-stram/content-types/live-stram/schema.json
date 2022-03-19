@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "live_strams",
+  "info": {
+    "singularName": "live-stram",
+    "pluralName": "live-strams",
+    "displayName": "live_stram"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "live_stream_link": {
+      "type": "text",
+      "required": true
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course",
+      "mappedBy": "live_stram"
+    }
+  }
+}

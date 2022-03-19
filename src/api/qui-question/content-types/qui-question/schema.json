@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "qui_questions",
+  "info": {
+    "singularName": "qui-question",
+    "pluralName": "qui-questions",
+    "displayName": "quiQuestion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    }
+  }
+}

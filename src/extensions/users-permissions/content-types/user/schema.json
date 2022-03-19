@@ -81,6 +81,16 @@
       "relation": "oneToOne",
       "target": "api::subdscription.subdscription",
       "inversedBy": "student"
+    },
+    "state": {
+      "type": "string",
+      "required": true
+    },
+    "quiz_result": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::quiz-result.quiz-result",
+      "mappedBy": "user"
     }
   }
 }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "content",
     "pluralName": "contents",
-    "displayName": "content"
+    "displayName": "content",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,21 +19,25 @@
       "type": "string"
     },
     "file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false,
-      "private": true
+      ]
     },
     "course": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::course.course",
       "inversedBy": "contents"
+    },
+    "is_free": {
+      "type": "boolean",
+      "required": true
     }
   }
 }
